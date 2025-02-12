@@ -15,7 +15,7 @@ class PomodoroTimer:
         notification.notify("Pomodoro Timer", message)
 
     def run(self):
-        notification.notify("Pomodoro Timer", "Pomodoro Timer Started! 🍅")
+        notification.notify("Pomo", "Pomodoro Timer Started! 🍅")
         for round in range(1, self.rounds + 1):
             self.countdown(self.work_minutes, f"Round {round}: Time's up! Take a break.")
             if round < self.rounds:
